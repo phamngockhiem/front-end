@@ -1,0 +1,120 @@
+<h3 class="text-center">Update Product</h3>
+<form (ngSubmit) = "onSubmit()">
+  <div class="input-group col-md-10 offset-md-1 mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Product Name</span>
+    </div>
+    <input
+      id="productName"
+      type="text"
+      class="form-control"
+      placeholder="ProductName"
+      name="productName"
+      [(ngModel)]="product.productName"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Product Price &nbsp;</span
+      >
+    </div>
+    <input
+      id="productPrice"
+      type="text"
+      class="form-control"
+      placeholder="ProductPrice"
+      name="productPrice"
+      [(ngModel)]="product.productPrice"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Category Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+      >
+    </div>
+    <input
+      id="productCategoryId"
+      type="text"
+      class="form-control"
+      placeholder="CategoryId"
+      name="productCategoryId"
+      [(ngModel)]="product.productCategoryId"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Discount Price&nbsp;</span
+      >
+    </div>
+    <input
+      id="productDiscountPrice"
+      type="text"
+      class="form-control"
+      placeholder="ProductDiscountPrice"
+      name="productDiscountPrice"
+      [(ngModel)]="product.productDiscountPrice"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Product Total&nbsp;&nbsp;</span
+      >
+    </div>
+    <input
+      id="productTotal"
+      type="text"
+      class="form-control"
+      placeholder="ProductTotal"
+      name="productTotal"
+      [(ngModel)]="product.productTotal"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Product Intro&nbsp;&nbsp;</span
+      >
+    </div>
+    <input
+      id="productIntro"
+      type="text"
+      class="form-control"
+      placeholder="ProductIntro"
+      [(ngModel)]= "product.productIntro"
+      name="productIntro"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Product Notes</span>
+    </div>
+    <input
+      id="productNotes"
+      type="text"
+      class="form-control"
+      placeholder="ProductNotes"
+      name="productNotes"
+      [(ngModel)]= "product.productNotes"
+    />
+  </div>
+  <div class="input-group mb-3 col-md-10 offset-md-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        >Product Size&nbsp;&nbsp;&nbsp;</span
+      >
+    </div>
+    <input
+      id="productSizes"
+      type="text"
+      class="form-control"
+      placeholder="productSizes"
+      name="productSize"
+      [(ngModel)]="product.productSizes"
+    />
+  </div>
+  <button class="btn btn-success" type="submit">Update</button>
+</form>

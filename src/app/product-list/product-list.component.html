@@ -1,0 +1,33 @@
+<h2 class="text-center">Product List</h2>
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="text-center">
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category Id</th>
+        <th>Product Total</th>
+        <th>Product Create Date</th>
+        <th>Product Create By</th>
+        <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center" *ngFor = "let product of ProductList">
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.productPrice}}</td>
+      <td>{{product.productCategoryId}}</td>
+      <td>{{product.productTotal}}</td>
+      <td>{{product.productCreatedDate}}</td>
+      <td>{{product.productCreatedBy}}</td>
+      <td class="action">
+        <button (click) = "updateProduct(product.productId)" class="btn btn-info">Update</button>&nbsp;
+        <button (click) = "deleteProduct(product.productId)" class="btn btn-danger">Delete</button>&nbsp;
+        <button (click) = "detailsProduct(product.productId)" class="btn btn-info">View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
